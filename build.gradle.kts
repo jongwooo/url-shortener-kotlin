@@ -6,7 +6,6 @@ plugins {
   id("io.spring.dependency-management") version "1.1.0"
   kotlin("jvm") version "1.7.22"
   kotlin("plugin.spring") version "1.7.22"
-  kotlin("plugin.jpa") version "1.7.22"
 }
 
 group = "io.github.jongwooo"
@@ -24,8 +23,6 @@ repositories {
 }
 
 dependencies {
-  implementation("org.springframework.boot:spring-boot-starter-data-jpa")
-  implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
   implementation("org.springframework.boot:spring-boot-starter-web")
   implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
   implementation("org.jetbrains.kotlin:kotlin-reflect")
