@@ -1,11 +1,10 @@
-# URL Shortener API with Kotlin
+# URL Shortener
 
-This is a URL Shortener API written in Kotlin with the only purpose to create shortened urls, which are stored in a Redis.
-The shortened links can then be used to provide a simpler access to complicated URLs.
+This project is a URL Shortener API implemented using Hexagonal Architecture and written in Kotlin.
 
 ## Structure
 
-The project is structured in **Hexagonal Architecture**. The core of the application is the domain layer, which is
+This project is structured in Hexagonal Architecture. The core of the application is the domain layer, which is
 surrounded by the application layer. The application layer is surrounded by the adapter layer, which contains the
 REST Controller and the Redis Database.
 
