@@ -25,7 +25,6 @@ class UrlShortenerRestAdapter(private val urlShortenerUseCase: UrlShortenerUseCa
   @GetMapping("/{hash}")
   fun resolve(@PathVariable hash: String): ResponseEntity<HttpStatus> {
     val target = urlShortenerUseCase.resolve(hash)
-
     return ResponseEntity
       .status(HttpStatus.MOVED_PERMANENTLY)
       .location(URI.create(target))

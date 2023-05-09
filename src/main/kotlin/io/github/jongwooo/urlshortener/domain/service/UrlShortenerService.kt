@@ -14,14 +14,12 @@ class UrlShortenerService(private val urlHashOutputPort: UrlHashOutputPort) : Ur
   private fun hash(url: String, length: Int = 6): String {
     val bytes = digest.digest(url.toByteArray())
     val hashString = String.format("%32x", java.math.BigInteger(1, bytes))
-
     return hashString.take(length)
   }
 
   override fun shorten(url: String): String {
     val hash = hash(url)
     urlHashOutputPort.saveUrlByHash(hash, url)
-
     return hash
   }
 
