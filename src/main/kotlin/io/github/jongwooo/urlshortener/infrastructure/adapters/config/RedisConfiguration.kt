@@ -1,4 +1,4 @@
-package io.github.jongwooo.urlshortener.infrastructure.adapters.configuration
+package io.github.jongwooo.urlshortener.infrastructure.adapters.config
 
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.context.annotation.Bean

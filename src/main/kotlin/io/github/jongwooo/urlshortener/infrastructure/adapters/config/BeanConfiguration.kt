@@ -1,4 +1,4 @@
-package io.github.jongwooo.urlshortener.infrastructure.adapters.configuration
+package io.github.jongwooo.urlshortener.infrastructure.adapters.config
 
 import io.github.jongwooo.urlshortener.infrastructure.adapters.output.persistence.UrlHashPersistenceAdapter
 import io.github.jongwooo.urlshortener.infrastructure.adapters.output.persistence.repository.UrlHashRepository
